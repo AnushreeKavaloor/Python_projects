@@ -18,13 +18,28 @@ class Student:
 			percentage= sum(self.__marks.values())/len(self.__marks)
 		return percentage
 		
+	def grade(self):
+		percent = self.percentage()
+		if percent>=90:
+			return "A+"
+		elif percent>=80:
+			return "A"
+		elif percent>=70:
+			return "B+"
+		elif percent>=60:
+			return "B"
+		elif percent>=50:
+			return "C+"
+		else:
+			return "C"
+		
 	
 	def check_pass_status(self):
 		has_passed = all(mark>=40 for mark in self.__marks.values())
 		if has_passed:
-			print(f"{self.name} has passed")
+			return "Passed"
 		else:
-			print(f"{self.name} has failed")
+			return "Failed"
 
 class Report:
 	@staticmethod
@@ -36,7 +51,8 @@ class Report:
 			print(f"{subject} : {marks}")
 		print("–––––––––––––––")
 		print(f"Percentage: {student.percentage()}%")
-		student.check_pass_status()
+		print(f"Grade: {student.grade()}")
+		print(f"{student.name} has {student.check_pass_status()}")
 		print("\n\n")
 
 a = Student("Anu", 3)
