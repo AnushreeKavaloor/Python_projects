@@ -1,4 +1,4 @@
-print("–––MENU–––")
+print("––––MENU––––")
 print("1.Add new note\n2.View all saved notes\n3.Erase content in file and create fresh\n4.Exit")
 
 while True:
