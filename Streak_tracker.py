@@ -28,3 +28,6 @@ else:
 	with open("streak.txt","a") as append:
 		new_streak = 1
 		append.write(f"{today}, {new_streak}\n")
+with open("streak.txt","r") as reading:
+		print("Current streak.txt:")
+		print(reading.read())
