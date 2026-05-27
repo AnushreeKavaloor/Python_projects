@@ -20,13 +20,13 @@ while True:
 					result = num1 / num2
 					print(f"Result: {result}")
 				else:
-					print("Division by zero is impossible")
+					print("Division by zero is impossible.")
 			case '%':
 				if num2!=0:
 					result = num1 % num2
 					print(f"Result: {result}")
 				else:
-					print("Division by zero is invalid to find remainder")
+					print("Division by zero is invalid to find remainder.")
 			case '**':
 				result = num1**num2
 				print(f"Result: {result}")
@@ -34,8 +34,8 @@ while True:
 					print("Exiting....")
 					break
 			case _:
-					print("Invalid Operation")
+					print("Invalid Operation!")
 	except ValueError:
-		print("You must enter only numbers")
+		print("You must enter only numbers.")
 	finally:
 		print("Operation completed!")
