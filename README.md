@@ -11,6 +11,14 @@ An OOP-based mark sheet generator that calculates percentage and pass/fail statu
 - Concepts used: Classes, private attributes `__marks`, `@staticmethod`, `all()`, type hints
 - Features: Mark validation 0-100, safe percentage calculation, handles zero marks edge case
 
+### 2. Timer Decorator
+`timer.py`
+
+A decorator that measures how long any function takes to run.
+
+- Concepts used: decorators, closures, `time.time()`, `__name__`
+- Features: Works on any function, prints execution time in seconds
+  
 ## Tech Stack
 - Python 3.x
 
