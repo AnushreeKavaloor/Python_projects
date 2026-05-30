@@ -16,8 +16,9 @@ An OOP-based mark sheet generator that calculates percentage and pass/fail statu
 
 A decorator that measures how long any function takes to run.
 
-- Concepts used: decorators, closures, `time.time()`, `__name__`
-- Features: Works on any function, prints execution time in seconds
+- Decorators take functions as input
+- wrapper() runs before/after the function
+- time.time() gives current time in seconds
   
 ## Tech Stack
 - Python 3.x
