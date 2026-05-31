@@ -19,6 +19,14 @@ A decorator that measures how long any function takes to run.
 - Decorators take functions as input
 - wrapper() runs before/after the function
 - time.time() gives current time in seconds
+
+  ### 3. GitHub Streak Tracker
+`streak_tracker.py`
+
+Small script to log daily commits and keep me motivated.
+
+- Concepts: file I/O, datetime module, basic logging
+- Status: Added to README today. 
   
 ## Tech Stack
 - Python 3.x
